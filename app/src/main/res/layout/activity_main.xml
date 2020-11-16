@@ -4,15 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/ImgInfnetLogo"
+        android:layout_width="252dp"
+        android:layout_height="227dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/infnetlogo" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ImgInfnetLogo">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Projeto de Bloco - TP3"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVazio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtGrupo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grupo"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVazio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtEloy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eloy Barbosa"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtHenrique"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Henrique Francisco"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtNelson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nelson"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtRoberto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roberto Batista"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/txtVazio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtProjeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Projeto"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtVazio4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtCalculadora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculadora IMC"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BtnStart"
+        android:layout_width="282dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="32dp"
+        android:background="#102ED8"
+        android:text="Calculadora IMC"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
