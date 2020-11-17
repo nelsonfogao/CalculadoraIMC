@@ -12,6 +12,7 @@
         android:layout_width="252dp"
         android:layout_height="227dp"
         android:layout_marginTop="16dp"
+        android:contentDescription="Logo Infnet"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -109,6 +110,7 @@
             android:layout_height="wrap_content"
             android:text="Calculadora IMC"
             android:textAlignment="center" />
+
     </LinearLayout>
 
     <Button
@@ -116,7 +118,7 @@
         android:layout_width="282dp"
         android:layout_height="59dp"
         android:layout_marginBottom="32dp"
-        android:background="#102ED8"
+        android:background="#3C3F41"
         android:text="Calculadora IMC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
