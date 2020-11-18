@@ -114,7 +114,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/BtnStart"
+        android:id="@+id/btnStart"
         android:layout_width="282dp"
         android:layout_height="59dp"
         android:layout_marginBottom="32dp"
