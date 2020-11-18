@@ -18,6 +18,23 @@ class ResultadoImcActivity : AppCompatActivity() {
 
         var imc = peso / (altura * altura)
 
-        textViewResult.text = "${usuario.nome.toString()} seu IMG é de:\n $imc"
+        var resultadoExtenso = ""
+
+
+        if (imc < 18.5){
+            resultadoExtenso = "Magreza"
+        }else if(imc in 18.5..24.5){
+            resultadoExtenso = "Normal"
+        }else if(imc in 25.0..29.9){
+            resultadoExtenso = "Sobrepeso"
+        }else if (imc in 30.0..39.9){
+            resultadoExtenso = "Obesidade"
+        }else{
+            resultadoExtenso = "Obesidade Grave"
+        }
+
+
+
+        textViewResult.text = "${usuario.nome.toString()} seu IMC é de:\n\n $imc \n\n Sua Classificação é: \n\n $resultadoExtenso"
     }
 }
