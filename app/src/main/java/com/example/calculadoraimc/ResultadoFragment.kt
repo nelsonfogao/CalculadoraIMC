@@ -37,7 +37,7 @@ class ResultadoFragment : Fragment() {
                     resultadoExtenso = "Magreza Moderada"
                 }
                 imc >=17 && imc < 18.5 -> {
-                    resultadoExtenso = "Maagreza Leve"
+                    resultadoExtenso = "Magreza Leve"
                 }
                 imc >=18.5 && imc < 25 -> {
                     resultadoExtenso = "Saudável"
