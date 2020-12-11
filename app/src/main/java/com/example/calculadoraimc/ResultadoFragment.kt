@@ -29,16 +29,31 @@ class ResultadoFragment : Fragment() {
             var resultadoExtenso = ""
 
 
-            if (imc < 18.5){
-                resultadoExtenso = "Magreza"
-            }else if(imc in 18.5..24.5){
-                resultadoExtenso = "Normal"
-            }else if(imc in 25.0..29.9){
-                resultadoExtenso = "Sobrepeso"
-            }else if (imc in 30.0..39.9){
-                resultadoExtenso = "Obesidade"
-            }else{
-                resultadoExtenso = "Obesidade Grave"
+            when {
+                imc < 16 -> {
+                    resultadoExtenso = "Magreza Grave"
+                }
+                imc >=16 && imc < 17 -> {
+                    resultadoExtenso = "Magreza Moderada"
+                }
+                imc >=17 && imc < 18.5 -> {
+                    resultadoExtenso = "Maagreza Leve"
+                }
+                imc >=18.5 && imc < 25 -> {
+                    resultadoExtenso = "Saudável"
+                }
+                imc >=25 && imc < 30 -> {
+                    resultadoExtenso = "Sobrepeso"
+                }
+                imc >=30 && imc < 35 -> {
+                    resultadoExtenso = "Obesidade Grau I"
+                }
+                imc >=35 && imc < 40 -> {
+                    resultadoExtenso = "Obesidade Grau II (Severa)"
+                }
+                imc >= 40 -> {
+                    resultadoExtenso = "Obesidade Grau III (Mórbida)"
+                }
             }
 
 
