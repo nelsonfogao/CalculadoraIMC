@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationmain"
+    app:startDestination="@id/homeImcFragment">
+
+    <fragment
+        android:id="@+id/imcFragment"
+        android:name="com.example.calculadoraimc.ImcFragment"
+        android:label="fragment_imc"
+        tools:layout="@layout/fragment_imc" >
+        <action
+            android:id="@+id/action_imcFragment_to_resultadoFragment"
+            app:destination="@id/resultadoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultadoFragment"
+        android:name="com.example.calculadoraimc.ResultadoFragment"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" />
+    <fragment
+        android:id="@+id/homeImcFragment"
+        android:name="com.example.calculadoraimc.HomeImcFragment"
+        android:label="fragment_home_imc"
+        tools:layout="@layout/fragment_home_imc" >
+        <action
+            android:id="@+id/action_homeImcFragment_to_imcFragment"
+            app:destination="@id/imcFragment" />
+    </fragment>
+</navigation>
