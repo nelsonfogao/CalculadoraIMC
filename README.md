@@ -1,8 +1,8 @@
 # CalculadoraIMC
 
-![Tela Principal](Tela1.png)
+![Tela Principal](tela1.png)
 
-![Calculo de IMC](Tela2.png)
+![Calculo de IMC](tela2.png)
 
-![Resultado](Tela3.png)
+![Resultado](tela3.png)
 
